@@ -4,9 +4,9 @@
 Very simple captcha library for php/gd
 
 ### Required
--PHP5
--GD
--.ttf TrueType Font file
+- PHP5
+- GD
+- .ttf TrueType Font file
 
 ### demo
 
