@@ -1,10 +1,16 @@
 
-# PumpCaptcha - Very simple captcha library for php/gd
+# PumpCaptcha
+
+Very simple captcha library for php/gd
 
 ### Required
 -PHP5
 -GD
 -.ttf TrueType Font file
+
+### demo
+
+http://tokita.net/sample/pumpcaptcha/
 
 ### example
 
