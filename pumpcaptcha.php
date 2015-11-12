@@ -88,8 +88,8 @@ class PumpCaptcha
 	imagefilledrectangle($im, 0, 0, $this->width, $this->height, $gray);
 	imagefilledrectangle($im, $this->border - 1, $this->border - 1, $this->width - $this->border, $this->height - $this->border, $white);
 
-        for($i=0; $i<strlen($string)+10; $i++) {
-	    imageline($im, rand(0, $this->width - 1), rand(0, $this->height - 1), rand(0, $ths->width - 1), rand(0, $this->height - 1), $gray);
+        for($i=0; $i<strlen($string) + 20; $i++) {
+	    imageline($im, rand(-50, $this->width + 50), rand(-50, $this->height + 50), rand(-50, $ths->width + 50), rand(-50, $this->height + 50), $gray);
 	}
 
 	$x = 10 + rand(0, 40);
@@ -101,7 +101,7 @@ class PumpCaptcha
  	imagettftext($im, $font_size, 0, $x, $y, $gray, $font, $text);
 	
         header('Content-type: image/jpeg');
-        imagejpeg($im, null, 20);
+        imagejpeg($im, null, 50);
     }
     
     private function generate_string()
