@@ -60,7 +60,6 @@
  */
 
 session_start();
-require_once 'pumpcaptcha.php';
 
 $pumpcaptcha = new PumpCaptcha();
 $pumpcaptcha->output_image();
